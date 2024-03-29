@@ -23,7 +23,7 @@ section.slider{
     height: auto;
     position: relative;
     text-align: center;
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .sliderContent input{
