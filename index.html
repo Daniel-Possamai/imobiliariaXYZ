@@ -12,8 +12,45 @@
     <title>Imobiliária XYZ</title>
 </head>
 <body>
-    <h1>Teste</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorem dolore vero sit, perferendis exercitationem et sapiente maxime natus eius laudantium totam iusto ad vitae expedita. Iusto adipisci eum inventore.</p>
+    <header>
+        <div class="interface">
+            <div class="flex">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./src/images/logo.png" alt="imagem com logo do site">
+                    </a>                 
+                </div>
+
+                <nav class="menuDesktop">
+                    <ul>
+                        <li><a href="#">INÍCIO</a></li>
+                        <li><a href="#">SOBRE</a></li>
+                        <li><a href="#">CONTATO</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="btnAbrirMenu" id="btnMenuMobile">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="menuMobile" id="menuMobile">
+            <div class="btnFechar">
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">INÍCIO</a></li>
+                    <li><a href="#">SOBRE</a></li>
+                    <li><a href="#">CONTATO</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="overlayMenu" id="overlayMenuMobile"></div>
+    </header>
 
 
 

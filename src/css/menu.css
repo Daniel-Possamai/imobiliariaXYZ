@@ -1,0 +1,121 @@
+
+
+header{
+    padding: 40px 4% 10px 4%;
+    box-shadow: 0 0 10px 10px #00000030;
+}
+
+header .flex{
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a img{
+    width: 70px;
+    height: 60px;
+}
+
+header .logo{
+    transition: 0.3s;
+}
+
+header .logo:hover{
+    transform: scale(1.15);
+}
+
+header .menuDesktop ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 40px;
+    border-radius: 40px;
+}
+
+header .menuDesktop ul li a{
+    color: #363636;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+header nav.menuDesktop ul li a:hover{
+    color: #1B25D3;
+    transform: scale(1.15);
+}
+
+
+/* Responsivo MOBILE */
+
+.overlayMenu{
+    background-color: #000000a0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8888;
+    display: none;
+}
+
+.btnAbrirMenu i{
+    font-size: 30px;
+    position: absolute;
+    color: #1B25D3;
+    top: 5%;
+    right: 10%;
+}
+
+.menuMobile{
+    background-color: #000;
+    height: 100vh;
+    border-radius: 50px 0 0 50px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.menuMobile.openMenu{
+    width: 60%;
+    border-left: 2px solid #1B25D3;
+}
+
+.menuMobile.openMenu ~ .overlayMenu{
+    display: block;
+}
+
+.menuMobile nav ul{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.menuMobile nav ul li a{
+    display: block;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 300;
+    padding: 35px 4%;
+    border-radius: 35px;
+    transition: 0.7s ease-in-out;
+    text-decoration: none;
+}
+
+.menuMobile nav ul li a:hover{
+    background-color: #1B25D3;
+    font-weight: bold;
+}
+
+.menuMobile .btnFechar{
+    padding: 35px 4%
+}
+
+.menuMobile .btnFechar i{
+    color:  #1B25D3;
+    font-size: 28px;
+}

@@ -1,4 +1,38 @@
+
+/* Gerais */
+
 html{
     font-family: "Lato", sans-serif;
     font-weight: 400;
+}
+
+body{
+    background-color: #fff;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+
+/* Responsivo */
+
+@media screen and (min-width: 1021px){
+    /* header */
+    .btnAbrirMenu{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    /* Header */
+    .menuDesktop{
+        display: none;
+    }
 }
