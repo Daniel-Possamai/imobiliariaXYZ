@@ -1,10 +1,71 @@
 /* Slideshow */
 
 section.slider{
-    padding: 40px 4%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 .slidebox img{
+    width: 90%;
+    height: 55%;
+}
+
+.sliderContent{
+    display: flex;
+    width: 400%;
+    height: auto;
+}
+
+.slidebox{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.sliderContent input{
+    display: none;
+}
+
+.navManual, .navAuto{
+    position: absolute;
     width: 100%;
-    
+    margin-top: 31%;
+    justify-content: center;
+    display: flex;
+}
+
+.navManual .manualBtn, .navAuto div{
+    border: 1px solid #1B25D3;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navManual .manualBtn:not(:last-child), .navAuto div:not(:last-child){
+    margin-right: 10px;
+}
+
+.navManual .manualBtn:hover{
+    transform: scale(1.09);
+}
+
+#radio1:checked ~ .navAuto .autoBtn1, #radio2:checked ~ .navAuto .autoBtn2, #radio3:checked ~ .navAuto .autoBtn3{
+    background-color: #1B25D3;
+}
+
+#radio1:checked ~ .primeiro{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+    margin-left: -50%;
 }
