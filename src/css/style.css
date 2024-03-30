@@ -20,8 +20,100 @@ body{
     display: flex;
 }
 
+section.hero .interface{
+    padding: 0 4%;
+}
+
+.hero .containerBuscaImoveis{
+    padding: 0 3%;
+    width: 100%;
+    height: 60px;
+    background-color: #1B25D3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.hero .containerBuscaImoveis h2{
+    color: #fff;
+    font-size: 18px;
+}
+
+.hero .containerBuscaImoveis::after{
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 60px;
+    margin-left: -15px;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: #1B25D3 transparent;
+    display: block;
+    z-index: 1;
+}
+
+.containerBuscaImoveis .buscaCodigo{
+    display: flex;
+}
+
+.containerBuscaImoveis .buscaCodigo input{
+    width: 20em;
+    height: 2em;
+    border-radius: 7px 0 0 7px;
+    border: none;
+    outline: none;
+    padding: 2px;
+    margin: 0;
+}
+
+.containerBuscaImoveis .buscaCodigo button{
+    margin: 0;
+    width: 2em;
+    height: 2em;
+    background-color: #e0e1e2;
+    border: none;
+    border-radius: 0 7px 7px 0;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.containerBuscaImoveis .buscaCodigo button:active{
+    transform: scale(1.001);
+}
+
+.containerBuscaImoveis .buscaCodigo button:hover{
+    background-color: #cacbcd;
+}
+
+
 /* Responsivo */
 
+@media screen and (max-width: 1020px){
+
+    /* Buscador de imovel */
+    .containerBuscaImoveis .buscaCodigo input{
+        width: 10em;
+    }
+
+    .hero .containerBuscaImoveis h2{
+        font-size: 14px;
+    }
+
+}
+
+/* Responsivo extremo */
+@media screen and (max-width: 240px){
+    .containerBuscaImoveis .buscaCodigo input{
+        width: 100%;
+    }
+
+    .hero .containerBuscaImoveis h2{
+        font-size: 12px;
+    }
+
+}
 
 
 
