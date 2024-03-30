@@ -69,3 +69,16 @@ section.slider{
 #radio3:checked ~ .primeiro{
     margin-left: -50%;
 }
+
+/* Responsivo */
+
+@media screen and (max-width: 1020px){
+    /* Slider */
+    .navManual, .navAuto{
+        margin-top: 28%;
+    }
+
+    .navManual .manualBtn, .navAuto div{
+        padding: 8px;
+    }
+}
