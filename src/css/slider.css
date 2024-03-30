@@ -20,7 +20,7 @@ section.slider{
 
 .slidebox{
     width: 25%;
-    height: 370px;
+    height: 670px;
     position: relative;
     text-align: center;
     transition: 0.5s;
@@ -33,7 +33,7 @@ section.slider{
 .navManual, .navAuto{
     position: absolute;
     width: 100%;
-    margin-top: 25%;
+    margin-top: 630px;
     justify-content: center;
     display: flex;
 }
@@ -72,6 +72,9 @@ section.slider{
 
 /* Responsivo */
 
+
+
+
 @media screen and (max-width: 1020px){
     /* Slider */
     .navManual, .navAuto{
@@ -84,7 +87,7 @@ section.slider{
 
     .slidebox{
         width: 25%;
-        height: 10%;
+        height: 100%;
     }
     
 }
