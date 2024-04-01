@@ -98,7 +98,7 @@ section.hero .interface{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 25px;
     justify-content: center;
 }
 
@@ -108,13 +108,14 @@ section.hero .interface{
 }
 
 .filtro .tipoDoFiltro label{
+    margin-left: 5px;
     font-size: 1rem;
     color: #565656;
 }
 
 .filtro .tipoDoFiltro select{
     width: 20em;
-    height: 2em;
+    height: 3em;
     padding: 2px;
     border-radius: 50px;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
@@ -135,6 +136,12 @@ section.hero .interface{
     cursor: pointer;
 }
 
+.filtro .btnPesquisar{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
 /* Responsivo */
 
 @media screen and (max-width: 1020px){
@@ -151,6 +158,12 @@ section.hero .interface{
         font-size: 14px;
     }
 
+    /* Filtro */
+    .filtro .tipoDoFiltro select{
+        width: 10em;
+    }
+
+
 }
 
 /* Responsivo extremo */
@@ -165,6 +178,11 @@ section.hero .interface{
 
     .hero .containerBuscaImoveis h2{
         font-size: 12px;
+    }
+
+    /* Filtro */
+    .filtro .tipoDoFiltro select{
+        width: 7em;
     }
 
 }
