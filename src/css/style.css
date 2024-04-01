@@ -88,16 +88,51 @@ section.hero .interface{
 
 /* Formulario de pesquisa */
 
+.filtro{
+    border-radius: 0 0 5px 5px;
+    background-color: #f2f2f2;
+    padding: 4%;
+}
+
 .filtro form{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
+    justify-content: center;
 }
 
 .filtro .tipoDoFiltro{
     display: flex;
     flex-direction: column;
+}
+
+.filtro .tipoDoFiltro label{
+    font-size: 1rem;
+    color: #565656;
+}
+
+.filtro .tipoDoFiltro select{
+    width: 20em;
+    height: 2em;
+    padding: 2px;
+    border-radius: 50px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    border: none;
+    cursor: pointer;
+}
+
+.filtro .btnPesquisar button{
+    font-weight: bold;
+    color: #fff;
+    background-color: #1B25D3;
+    cursor: pointer;
+    width: 26em;
+    height: 3em;
+    border-radius: 50px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    border: none;
+    cursor: pointer;
 }
 
 /* Responsivo */
