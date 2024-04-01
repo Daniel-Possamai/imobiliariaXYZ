@@ -92,6 +92,7 @@ section.hero .interface{
     border-radius: 0 0 5px 5px;
     background-color: #f2f2f2;
     padding: 4%;
+    margin-bottom: 3px;
 }
 
 .filtro form{
@@ -143,12 +144,32 @@ section.hero .interface{
 }
 
 /* Container Card Imoveis */
+.containerImoveis{
+    display: flex;
+    justify-content: center;
+}
+
 .cardImovel{
-    border-radius: 50px;
-    border: 1px solid #000;
+    gap: 10px;
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0 1px 2px 0 #0000009d;
     width: 36em;
     height: 12em;
+    padding: 1%;
 }
+
+.imgCard{
+    height: 100%;
+    width: 50%;
+}
+
+.imgCard img{
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
 
 
 /* Responsivo */
