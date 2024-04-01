@@ -142,6 +142,15 @@ section.hero .interface{
     width: 100%;
 }
 
+/* Container Card Imoveis */
+.cardImovel{
+    border-radius: 50px;
+    border: 1px solid #000;
+    width: 36em;
+    height: 12em;
+}
+
+
 /* Responsivo */
 
 @media screen and (max-width: 1020px){
