@@ -67,7 +67,7 @@ header nav.menuDesktop ul li a:hover{
 }
 
 .menuMobile{
-    background-color: #000;
+    background-color: #fff;
     height: 100vh;
     border-radius: 50px 0 0 50px;
     position: fixed;
@@ -97,9 +97,9 @@ header nav.menuDesktop ul li a:hover{
 
 .menuMobile nav ul li a{
     display: block;
-    color: #fff;
-    font-size: 26px;
-    font-weight: 300;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
     padding: 35px 4%;
     border-radius: 35px;
     transition: 0.7s ease-in-out;
