@@ -281,6 +281,14 @@ footer .footer .logoFooter p{
     color: #fff;
 }
 
+footer .footer .logoFooter img{
+    transition: .3s;
+}
+
+footer .footer .logoFooter img:hover{
+    transform: scale(1.05);
+}
+
 footer .creditos{
     margin: 25px 0 1px 0;
     text-align: center;
@@ -298,6 +306,11 @@ footer .redesSociais{
 footer .redesSociais a{
     font-size: 2em;
     color: #7e7e7e;
+    transition: .3s;
+}
+
+footer .redesSociais a:hover{
+    color: #b7b7b7;
 }
 
 footer .contato{
@@ -355,6 +368,15 @@ footer .creditos p{
     .informacoes .btnAcesse .preco{
         font-size: 0.9em;
     }
+
+    /* Footer */
+
+    footer .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+
     
 
 
