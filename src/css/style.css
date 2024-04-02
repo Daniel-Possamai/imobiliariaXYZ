@@ -252,6 +252,72 @@ section.hero .interface{
     color: #1B25D3;
 }
 
+/* Footer */
+
+footer{
+    margin-top: 15px;
+    width: 100%;
+    background-color: #3c3d3d;
+}
+
+footer .interface{
+    padding: 4% 4% 0 4%;
+}
+
+footer .flex{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    align-items: start;
+}
+
+footer .footer .logoFooter p{
+    color: #fff;
+}
+
+footer .creditos{
+    margin: 25px 0 1px 0;
+    text-align: center;
+}
+
+footer .redesSociais{
+    color: #fff;
+    text-align: center;
+}
+
+.footer .redesSociais h4{
+    font-size: 1.09em;
+}
+
+footer .redesSociais a{
+    font-size: 2em;
+    color: #7e7e7e;
+}
+
+footer .contato{
+    text-align: start;
+    color: #fff;
+}
+
+footer .contato h4{
+    font-size: 1.09em;
+}
+
+footer .contato p{
+    font-weight: 350;
+}
+
+footer .creditos p{
+    font-weight: bold;
+}
+
+
 
 
 /* Responsivo */

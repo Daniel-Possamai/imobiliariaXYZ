@@ -32,7 +32,7 @@ header .menuDesktop ul li{
 
 header .menuDesktop ul li a{
     color: #363636;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     text-decoration: none;
     display: inline-block;
@@ -41,7 +41,7 @@ header .menuDesktop ul li a{
 
 header nav.menuDesktop ul li a:hover{
     color: #1B25D3;
-    transform: scale(1.15);
+    transform: scale(1.09);
 }
 
 
