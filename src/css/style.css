@@ -91,8 +91,9 @@ section.hero .interface{
 .filtro{
     border-radius: 0 0 5px 5px;
     background-color: #f2f2f2;
-    padding: 4%;
+    padding: 2%;
     margin-bottom: 3px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
 }
 
 .filtro form{
@@ -134,7 +135,6 @@ section.hero .interface{
     border-radius: 50px;
     box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
     border: none;
-    cursor: pointer;
 }
 
 .filtro .btnPesquisar{
@@ -145,8 +145,11 @@ section.hero .interface{
 
 /* Container Card Imoveis */
 .containerImoveis{
+    margin-top: 15px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .cardImovel{
@@ -157,9 +160,15 @@ section.hero .interface{
     width: 36em;
     height: 12em;
     padding: 1%;
+    transition: 0.3s;
+}
+
+.cardImovel:hover{
+    transform: scale(1.02);
 }
 
 .imgCard{
+    position: relative;
     height: 100%;
     width: 50%;
 }
@@ -168,6 +177,79 @@ section.hero .interface{
     border-radius: 5px;
     height: 100%;
     width: 100%;
+}
+
+.imgCard span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.8em;
+    padding: 3px;
+    color: #fff;
+    background-color: #1B25D3;
+    border-radius: 5px;
+}
+
+.informacoes{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+}
+
+
+.informacoes .headerInfoCard{
+    display: flex;
+    justify-content: space-between;
+}
+
+.informacoes .headerInfoCard h3{
+    text-align: start;
+}
+
+.informacoes .headerInfoCard p{
+    font-size: 1em;
+    font-weight: bold;
+    color: #000;
+    text-align: end;
+}
+
+.informacoes p{
+    color: #565656;
+    font-size: .85em;
+}
+
+.informacoes h4{
+    color: #000;
+    font-size: 1.13em;
+}
+
+/* Preço está junto com a div .btnVisite */
+.informacoes .btnAcesse{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.informacoes .btnAcesse a button{
+    font-weight: bold;
+    color: #fff;
+    background-color: #1B25D3;
+    width: 6em;
+    height: 2em;
+    border-radius: 50px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+    border: none;
+    cursor: pointer;
+}
+
+
+.informacoes .btnAcesse .preco{
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #1B25D3;
 }
 
 
@@ -189,9 +271,25 @@ section.hero .interface{
     }
 
     /* Filtro */
+    .filtro{
+        padding: 4%;
+    }
+
     .filtro .tipoDoFiltro select{
         width: 10em;
     }
+
+    /* Imovel card */
+    .informacoes .btnAcesse a button{
+        width: 4em;
+        height: 2em;
+    }
+    
+    
+    .informacoes .btnAcesse .preco{
+        font-size: 0.9em;
+    }
+    
 
 
 }
@@ -213,6 +311,30 @@ section.hero .interface{
     /* Filtro */
     .filtro .tipoDoFiltro select{
         width: 7em;
+    }
+
+    /* Card Imovel */
+
+    .informacoes h3{
+        font-size: 0.89em;
+    }
+
+    .informacoes h4{
+        font-size: 0.89em;
+    }
+
+    .informacoes p{
+        font-size: 0.7em;
+    }
+
+    .informacoes .btnAcesse a button{
+        width: 4em;
+        height: 2em;
+    }
+    
+    
+    .informacoes .btnAcesse .preco{
+        font-size: 0.7em;
     }
 
 }

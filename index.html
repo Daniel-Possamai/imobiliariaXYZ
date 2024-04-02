@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/menu.css">
     <link rel="stylesheet" href="./src/css/slider.css">
     <title>Imobiliária XYZ</title>
 </head>
+
 <body>
     <header>
         <div class="interface">
@@ -19,7 +23,7 @@
                 <div class="logo">
                     <a href="#">
                         <img src="./src/images/logo.png" alt="imagem com logo do site">
-                    </a>                 
+                    </a>
                 </div>
 
                 <nav class="menuDesktop">
@@ -108,53 +112,127 @@
                 <div class="filtro">
                     <form action="#" method="get">
                         <div class="tipoDoFiltro">
-                        <label for="finalidade">Finalidade:</label>
-                        <select name="Finalidade" id="finalidade">
-                            <option value="selecione">Selecione</option>
-                            <option value="alugar">Alugar</option>
-                            <option value="comprar">Comprar</option>
-                        </select></div>
+                            <label for="finalidade">Finalidade:</label>
+                            <select name="Finalidade" id="finalidade">
+                                <option value="selecione">Selecione</option>
+                                <option value="alugar">Alugar</option>
+                                <option value="comprar">Comprar</option>
+                            </select>
+                        </div>
                         <div class="tipoDoFiltro">
-                        <label for="cidade">Cidade:</label>
-                        <select name="Cidade" id="cidade">
-                            <option value="selecione">Selecione</option>
-                            <option value="saoMiguelDoOeste">São Miguel do Oeste</option>
-                            <option value="descanso">Descanso</option>
-                        </select></div>
+                            <label for="cidade">Cidade:</label>
+                            <select name="Cidade" id="cidade">
+                                <option value="selecione">Selecione</option>
+                                <option value="saoMiguelDoOeste">São Miguel do Oeste</option>
+                                <option value="descanso">Descanso</option>
+                            </select>
+                        </div>
                         <div class="tipoDoFiltro">
-                        <label for="categoria">Categoria:</label>
-                        <select name="Categoria" id="categoria">
-                            <option value="selecione">Selecione</option>
-                            <option value="casa">Casa</option>
-                            <option value="apartamento">Apartamento</option>
-                        </select></div>
+                            <label for="categoria">Categoria:</label>
+                            <select name="Categoria" id="categoria">
+                                <option value="selecione">Selecione</option>
+                                <option value="casa">Casa</option>
+                                <option value="apartamento">Apartamento</option>
+                            </select>
+                        </div>
                         <div class="tipoDoFiltro">
-                        <label for="bairro">Bairro:</label>
-                        <select name="Bairro" id="bairro">
-                            <option value="selecione">Selecione</option>
-                            <option value="bairroX">Bairro X</option>
-                            <option value="bairroY">Bairro Y</option>
-                        </select>
+                            <label for="bairro">Bairro:</label>
+                            <select name="Bairro" id="bairro">
+                                <option value="selecione">Selecione</option>
+                                <option value="bairroX">Bairro X</option>
+                                <option value="bairroY">Bairro Y</option>
+                            </select>
                         </div>
 
                         <div class="btnPesquisar">
-                        <button type="submit">Pesquisar</button></div>
-                        
+                            <button type="submit">Pesquisar</button>
+                        </div>
+
                     </form>
                 </div>
                 <div class="containerImoveis">
                     <div class="cardImovel">
                         <div class="imgCard">
+                            <span>Casa De Alvenaria</span>
                             <img src="./src/images/casa1.jpg" alt="Imagem do imovel disponivel">
                         </div>
                         <div class="informacoes">
-                            <h3>Bairro <span>codigoImovel</span></h3>
-                            <h4>cidade</h4>
-                            <p>4 DORMITÓRIOS</p>
-                            <p>2 SALA</p>
+                            <div class="headerInfoCard">
+                                <h4>BAIRRO</h4>
+                                <p>1234</p>
+                            </div>
+                            <h4>CIDADE</h4>
+                            <p>1 DORMITÓRIOS</p>
+                            <p>1 SALA</p>
                             <p>2 BANHEIROS</p>
+                            <div class="btnAcesse">
+                                <a href="#"><button>Acesse</button></a>
+                                <p class="preco">R$ 999,00</p>
+                            </div>
                         </div>
-                        <div class="preco"></div>
+                    </div>
+
+                    <div class="cardImovel">
+                        <div class="imgCard">
+                            <span>Casa Mista</span>
+                            <img src="./src/images/casa2.jpg" alt="Imagem do imovel disponivel">
+                        </div>
+                        <div class="informacoes">
+                            <div class="headerInfoCard">
+                                <h4>BAIRRO</h4>
+                                <p>4321</p>
+                            </div>
+                            <h4>CIDADE</h4>
+                            <p>1 DORMITÓRIOS</p>
+                            <p>1 SALA</p>
+                            <p>1 BANHEIROS</p>
+                            <div class="btnAcesse">
+                                <a href="#"><button>Acesse</button></a>
+                                <p class="preco">R$ 780,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardImovel">
+                        <div class="imgCard">
+                            <span>Apartamento Em Alvenaria</span>
+                            <img src="./src/images/condomi.jpg" alt="Imagem do imovel disponivel">
+                        </div>
+                        <div class="informacoes">
+                            <div class="headerInfoCard">
+                                <h4>BAIRRO</h4>
+                                <p>3241</p>
+                            </div>
+                            <h4>CIDADE</h4>
+                            <p>2 DORMITÓRIOS</p>
+                            <p>1 SALA</p>
+                            <p>2 BANHEIROS</p>
+                            <div class="btnAcesse">
+                                <a href="#"><button>Acesse</button></a>
+                                <p class="preco">R$ 1.999,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cardImovel">
+                        <div class="imgCard">
+                            <span>Sala Comercial</span>
+                            <img src="./src/images/predio.jpg" alt="Imagem do imovel disponivel">
+                        </div>
+                        <div class="informacoes">
+                            <div class="headerInfoCard">
+                                <h4>BAIRRO</h4>
+                                <p>4423</p>
+                            </div>
+                            <h4>CIDADE</h4>
+                            <p>-</p>
+                            <p>2 SALA</p>
+                            <p>3 BANHEIROS</p>
+                            <div class="btnAcesse">
+                                <a href="#"><button>Acesse</button></a>
+                                <p class="preco">R$ 3.800,00</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -176,4 +254,5 @@
     <script src="https://kit.fontawesome.com/511ab30f24.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./src/javascript/index.js" defer></script>
 </body>
+
 </html>
