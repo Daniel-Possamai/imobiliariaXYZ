@@ -35,3 +35,18 @@ document.getElementById('radio1').checked = true
 setInterval(() => (
     proximaImg()
 ), 3000)
+
+
+//Lógica do filtro
+let filtroFinalidade = document.getElementById('finalidade');
+let filtroCidade = document.getElementById('cidade')
+filtroFinalidade.value = 'selecione';
+filtroCidade.disabled = true;
+
+filtroFinalidade.addEventListener('change', function(){
+    if (filtroFinalidade.value == 'selecione'){
+        filtroCidade.disabled = true;
+    }else{
+        filtroCidade.disabled = false;
+    }
+})
